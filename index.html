@@ -14,15 +14,15 @@
     <div class="container">
       <div class="navbar-top">
         <a href="index.html" class="logo-link"><img src="img/logo.svg" alt="Логотип: ehya" class="logo-img"></a>
-        <div class="navbar-inter">
-          <nav class="navbar-menu">
-            <a href="#" class="navbar-menu__link">Главная</a>
-            <a href="#" class="navbar-menu__link">Новинки</a>
-            <a href="#" class="navbar-menu__link">Тренды</a>
-            <a href="#" class="navbar-menu__link">Отзывы</a>
-            <a href="#" class="navbar-menu__link">Контакты</a>
-          </nav>
-          <a href="#" class="enter-link"><button class="navbar-button">Войти</button></a>
+        <div class="navbar-inter navbar-inter--hidden">
+            <nav class="navbar-menu">
+              <a href="#" class="navbar-menu__link">Главная</a>
+              <a href="#" class="navbar-menu__link">Новинки</a>
+              <a href="#" class="navbar-menu__link">Тренды</a>
+              <a href="#" class="navbar-menu__link">Отзывы</a>
+              <a href="#" class="navbar-menu__link navbar-menu__link-contact">Контакты</a>
+            </nav>
+            <a href="#" class="enter-link"><button class="navbar-button">Войти</button></a>
         </div>
         <!-- /.navbar-inter -->
         <button class="menu-button navbar-top__menu-button">
@@ -34,10 +34,18 @@
       <!-- ./navbar-top -->
     </div>
     <!-- ./container -->
-    <section class="main">
-      
-    </section>
   </header>
+  <div class="navbar-window">
+        <nav class="navbar-menu">
+          <a href="#" class="navbar-menu__link">Главная</a>
+          <a href="#" class="navbar-menu__link">Новинки</a>
+          <a href="#" class="navbar-menu__link">Тренды</a>
+          <a href="#" class="navbar-menu__link">Отзывы</a>
+          <a href="#" class="navbar-menu__link navbar-menu__link-contact">Контакты</a>
+          <a href="#" class="enter-link"><button class="navbar-button">Войти</button></a>
+        </nav>
+  </div>
+  <!-- ./navbar-window -->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>
