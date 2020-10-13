@@ -1,9 +1,24 @@
+@media (max-width: 1300px)
+  .main
+    &-container
+      max-width: 1180px
 @media (max-width: 1200px)
   .container
     max-width: 960px
   .main
     &-container
-      max-width: 1100px
+      max-width: 96%
+      padding-top: 50px
+      padding-bottom: 54px
+    &-wrapper
+      width: 450px
+    &__text
+      font-size: 20px
+      line-height: 36px
+    &-links
+      max-width: 450px
+      &__link
+        font-size: 14px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -14,6 +29,27 @@
         font-size: 14px
     &-button
       padding: 13px 20px
+  .main
+    &-container
+      min-height: 624px
+      padding-top: 36px
+      padding-left: 28px
+      padding-bottom: 36px
+    &-wrapper
+      max-width: 444px
+    &__hashtag
+      margin-bottom: 24px
+    &__title
+      font-size: 48px
+      line-height: 60px
+      margin-bottom: 20px
+    &__text
+      max-width: 400px
+      font-size: 18px
+      line-height: 32px
+      margin-bottom: 36.5px
+    &-links
+      width: 444px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -57,6 +93,7 @@
       background-color: #f5f5f5
       &--visible
         display: block
+        z-index: 200
   .menu
     &-button
       display: flex
@@ -74,10 +111,75 @@
         width: 22px
         height: 1px
         background-color: black
+  .main
+    padding-top: 0
+    margin-top: 102px
+    &-container
+      background-image: url(../img/main-photo-768.png)
+    &__text
+      line-height: 32px
+    &__button
+      margin-bottom: 40.5px
 @media (max-width: 576px)
   .container
     max-width: 500px
     width: 88%
+  .main
+    margin-top: 88px
+    &-container
+      max-width: 100%
+      border-radius: 0
+      background-image: url(../img/main-photo-320.png)
+      background-position: top
+      background-size: cover
+      padding-left: 1px
+      padding-bottom: 20px
+      padding-top: 1px
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 280px
+      margin: auto
+      margin-top: 381px
+      padding: 0
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__hashtag
+      padding: 2px 26.6px
+      margin-bottom: 20px
+    &__title
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+    &__text
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      margin-bottom: 24px
+    &__button
+      width: 257px
+      margin-bottom: 22px
+      padding: 13px 49px
+      font-size: 16px
+      line-height: 22px
+    &-links
+      flex-wrap: wrap
+      max-width: 274px
+      &__link
+        font-size: 16px
+        margin-bottom: 16px
+    &-icon
+      width: 24px
+      height: 24px
+      object-fit: cover
+  .like
+    &-link
+      transform: translateX(75%)
+
 @media (max-width: 320px)
   .container
     max-width: 290px
@@ -90,8 +192,8 @@
       &--fixed
         height: 64px
     &-window
-      &--visible
-        margin-top: 64px
+      top: 64px
+
 @media (max-height: 495px)
   .navbar
     &-window
@@ -103,5 +205,17 @@
         background-color: #c9ecff
     &-menu
       &__link
+        &:hover
+          text-decoration: underline
+  .main
+    &__button
+      &:hover
+        background-color: #85a7ab
+    &-icon
+      &:hover
+        background: rgba(54, 179, 126, 0.1)
+        border-radius: 13px
+    &-links
+      &__offer
         &:hover
           text-decoration: underline
