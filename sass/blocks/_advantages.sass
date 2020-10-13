@@ -1,0 +1,62 @@
+.advantages
+  padding-bottom: 145px
+  &-wrapper
+    display: grid
+    grid-template-columns: 320px 320px 392px
+    grid-template-rows: 230px 230px
+    grid-gap: 30px
+  &-photos
+    max-width: 100%
+    max-height: 100%
+    display: grid
+    grid-template-columns: 320px 320px
+    grid-template-rows: 230px 230px
+    grid-gap: 30px
+  &__photo-1
+    width: 320px
+    height: 490px
+    border-radius: 8px
+    grid-column: 1
+    grid-row: span 2
+    object-fit: cover
+  &__photo-2, &__photo-3
+    width: 320px
+    height: 230px
+    border-radius: 8px
+    object-fit: cover
+  &-info
+    max-height: 480px
+    grid-column: 3
+    grid-row: span 2
+    margin-left: 20px
+    &__title
+      margin-top: 10px
+      margin-bottom: 24px
+      font-family: "HKGrotesk-Regular"
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: $primary
+    &__text
+      max-height: 225px
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: $text-color
+      margin-top: 0
+      margin-bottom: 32px
+      overflow-y: auto
+  &-link
+    display: flex
+    align-items: center
+    text-decoration: none
+    &__text
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: $blue
+      margin-right: 19px

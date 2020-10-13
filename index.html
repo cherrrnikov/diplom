@@ -16,8 +16,8 @@
         <a href="index.html" class="logo-link"><img src="img/logo.svg" alt="Логотип: ehya" class="logo-img"></a>
         <div class="navbar-inter navbar-inter--hidden">
             <nav class="navbar-menu">
-              <a href="#" class="navbar-menu__link">Главная</a>
-              <a href="#" class="navbar-menu__link">Новинки</a>
+              <a href="#main" class="navbar-menu__link">Главная</a>
+              <a href="#advantages" class="navbar-menu__link">Новинки</a>
               <a href="#" class="navbar-menu__link">Тренды</a>
               <a href="#" class="navbar-menu__link">Отзывы</a>
               <a href="#" class="navbar-menu__link navbar-menu__link-contact">Контакты</a>
@@ -37,8 +37,8 @@
   </header>
   <div class="navbar-window">
         <nav class="navbar-menu">
-          <a href="#" class="navbar-menu__link">Главная</a>
-          <a href="#" class="navbar-menu__link">Новинки</a>
+          <a href="#main" class="navbar-menu__link">Главная</a>
+          <a href="#advantages" class="navbar-menu__link">Новинки</a>
           <a href="#" class="navbar-menu__link">Тренды</a>
           <a href="#" class="navbar-menu__link">Отзывы</a>
           <a href="#" class="navbar-menu__link navbar-menu__link-contact">Контакты</a>
@@ -46,7 +46,7 @@
         </nav>
   </div>
   <!-- ./navbar-window -->
-  <section class="main">
+  <section class="main" id="main">
     <div class="main-container">
       <div class="main-wrapper">
           <div class="main-info">
@@ -77,6 +77,32 @@
       <!-- /.main-wrapper -->
     </div>
     <!-- /.main-container -->
+  </section>
+  <section class="advantages" id="advantages">
+    <div class="container advantages-container">
+      <div class="advantages-wrapper">
+        <div class="advantages-photos">
+          <img src="img/advantage-1.jpg" alt="Фотография" class="advantages__photo-1">
+          <img src="img/advantage-2.jpg" alt="Фотография" class="advantages__photo-2">
+          <img src="img/advantage-3.jpg" alt="Фотография" class="advantages__photo-3">
+        </div>
+        <!-- /.advantages-photos -->
+        <div class="advantages-info">
+          <h3 class="advantages-info__title">Новая зимняя коллекция</h3>
+          <p class="advantages-info__text">
+            Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже. 
+            Успейте купить, пока коллекция есть
+            в наличии. Используйте код EHYA20, чтобы получить 20%&nbsp;скидку.</p>
+          <a href="#" class="advantages-link">
+            <span class="advantages-link__text">Посмотреть коллекцию</span>
+            <img src="img/collection.svg" alt="Иконка: Посмотреть коллекцию" class="advantages-link__icon">
+          </a>
+        </div>
+        <!-- /.advantages-info -->
+      </div>
+      <!-- /.advantages-wrapper -->
+    </div>
+    <!-- /.container -->
   </section>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/main.js"></script>

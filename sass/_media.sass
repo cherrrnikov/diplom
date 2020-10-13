@@ -19,6 +19,27 @@
       max-width: 450px
       &__link
         font-size: 14px
+  .advantages
+    &-wrapper
+      grid-template-columns: 300px 300px 300px
+      grid-gap: 20px
+    &-photos
+      grid-template-columns: 300px 300px 300px
+      grid-gap: 20px
+    &__photo-1
+      width: 300px
+      height: 480px
+    &__photo-2
+      width: 300px
+    &__photo-3
+      width: 300px
+      grid-column: 2
+    &-info
+      width: 300px
+      &__title
+        font-size: 46px
+      &__text
+        font-size: 17px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -50,9 +71,44 @@
       margin-bottom: 36.5px
     &-links
       width: 444px
+  .advantages
+    &-wrapper
+      max-width: 700px
+      grid-template-columns: 330px 330px
+      grid-template-rows: 230px 230px 300px
+      grid-column-gap: 40px
+      grid-row-gap: 30px
+    &-photos
+      grid-template-columns: 330px 330px
+      grid-column-gap: 40px
+      grid-row-gap: 30px
+
+    &__photo-1
+      width: 330px
+      height: 490px
+    &__photo-2
+      width: 330px
+    &__photo-3
+      width: 330px
+      grid-column: 2
+    &-info
+      width: 700px
+      grid-column: span 2
+      grid-row: 3
+      margin-left: 0
+      margin-top: 10px
+      &__title
+        font-size: 48px
+      &__text
+        max-width: 672px
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 36px
+        margin-bottom: 24px
 @media (max-width: 768px)
   .container
-    max-width: 576px
+    max-width: 670px
     width: 92%
   .navbar
     &-top
@@ -94,6 +150,8 @@
       &--visible
         display: block
         z-index: 200
+      &--hidden
+        display: none
   .menu
     &-button
       display: flex
@@ -113,6 +171,7 @@
         background-color: black
   .main
     padding-top: 0
+    padding-bottom: 80px
     margin-top: 102px
     &-container
       background-image: url(../img/main-photo-768.png)
@@ -120,6 +179,42 @@
       line-height: 32px
     &__button
       margin-bottom: 40.5px
+  .advantages
+    &-container
+      max-width: 670px
+      margin: auto
+    &-wrapper
+      max-width: 670px
+      grid-template-columns: 48% 48%
+      grid-template-rows: 230px 230px 300px
+      grid-gap: 30px
+    &-photos
+      max-width: 670px
+      grid-template-columns: 100% 100%
+      grid-gap: 30px
+
+    &__photo-1
+      width: 100%
+      max-height: 490px
+    &__photo-2
+      max-width: 97%
+    &__photo-3
+      max-width: 97%
+      grid-column: 2
+    &-info
+      max-width: 100%
+      grid-column: span 2
+      grid-row: 3
+      margin-left: 0
+      margin-top: 10px
+      &__title
+        font-size: 48px
+      &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 36px
+        margin-bottom: 24px
 @media (max-width: 576px)
   .container
     max-width: 500px
@@ -179,7 +274,49 @@
   .like
     &-link
       transform: translateX(75%)
-
+  .advantages
+    &-wrapper
+      grid-template-columns: 48.5% 48.5%
+      grid-template-rows: 290px 138px 288px
+      grid-gap: 14px
+    &-photos
+      grid-template-columns: 100% 100%
+      grid-template-rows: 290px 138px 288px
+      grid-gap: 14px
+    &__photo-1
+      grid-column: span 2
+      grid-row: 1
+      width: 100%
+      height: 290px
+    &__photo-2
+      max-width: 100%
+      height: 50%
+      grid-column: 1 / 2
+      grid-row: 2
+    &__photo-3
+      max-width: 100%
+      height: 50%
+      grid-column: 2
+      grid-row: 2
+    &-info
+      grid-column: span 2
+      grid-row: 3
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 22px
+      &__title
+        text-align: center
+        font-size: 33px
+        line-height: 36px
+        margin-bottom: 20px
+        margin-top: 0
+      &__text
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+    &-link
+      display: none
 @media (max-width: 320px)
   .container
     max-width: 290px
@@ -193,6 +330,33 @@
         height: 64px
     &-window
       top: 64px
+  .advantages
+    &-wrapper
+      grid-template-columns: 48.5% 48.5%
+      grid-template-rows: 290px 97px 335px
+      grid-gap: 14px
+    &-photos
+      grid-template-columns: 100% 100%
+      grid-template-rows: 290px 97px 335px
+      grid-gap: 14px
+    &__photo-1
+      grid-column: span 2
+      grid-row: 1
+      width: 100%
+      height: 290px
+    &__photo-2
+      max-width: 100%
+      max-height: 97px
+      grid-column: 1 / 2
+      grid-row: 2
+    &__photo-3
+      max-width: 100%
+      max-height: 97px
+      grid-column: 2
+      grid-row: 2
+    &-info
+      &__text
+        max-height: 197px
 
 @media (max-height: 495px)
   .navbar
