@@ -40,6 +40,22 @@
         font-size: 46px
       &__text
         font-size: 17px
+  .trends
+    &-wrapper
+      grid-template-columns: repeat(3, 300px)
+      grid-gap: 30px
+    &-card
+      width: 300px
+
+  .best
+    &-card
+      &--visible
+        min-width: 300px
+  .soon
+    &-card
+      &--visible
+        min-width: 300px
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -106,6 +122,21 @@
         font-size: 20px
         line-height: 36px
         margin-bottom: 24px
+  .trends
+    &-wrapper
+      grid-template-columns: repeat(2, 335px)
+      grid-gap: 30px
+    &-card
+      width: 335px
+  .best
+    &-card
+      &--visible
+        min-width: 335px
+
+  .soon
+    &-card
+      &--visible
+        min-width: 335px
 @media (max-width: 768px)
   .container
     max-width: 670px
@@ -180,6 +211,7 @@
     &__button
       margin-bottom: 40.5px
   .advantages
+    padding-bottom: 79px
     &-container
       max-width: 670px
       margin: auto
@@ -215,6 +247,110 @@
         font-size: 20px
         line-height: 36px
         margin-bottom: 24px
+  .trends
+    &-container
+      max-width: 608px
+    &-wrapper
+      max-width: 608px
+      grid-template-columns: repeat(2, 280px)
+      grid-gap: 48px
+    &-card
+      width: 280px
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 55.5px
+    &-title
+      &__title
+        margin-bottom: 27.5px
+    &-button
+      padding-left: 31px
+      padding-right: 30px
+      &__text
+        margin-top: 25px
+  .best
+    &-card
+      &--visible
+        min-width: 280px
+  .soon
+    &-card
+      &--visible
+        min-width: 280px
+@media (max-width: 661px)
+  .trends
+    &-container
+      max-width: 576px
+      width: 95%
+    &-wrapper
+      max-width: 576px
+      grid-template-columns: repeat(2, 273px)
+      grid-gap: 30px
+    &-card
+      width: 273px
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 55.5px
+    &-title
+      &__title
+        margin-bottom: 27.5px
+    &-tabs
+      &__tab
+        margin-right: 16px
+        &--soon
+          margin-right: 0
+    &-button
+      padding-left: 31px
+      padding-right: 30px
+      &__text
+        margin-top: 25px
+  .best
+    &-card
+      &--visible
+        min-width: 273px
+  .soon
+    &-card
+      &--visible
+        min-width: 273px
+@media (max-width: 606px)
+  .trends
+    &-container
+      max-width: 550px
+      width: 95%
+    &-wrapper
+      max-width: 550px
+      grid-template-columns: repeat(2, 260px)
+      grid-gap: 30px
+    &-card
+      width: 260px
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 55.5px
+    &-title
+      &__title
+        margin-bottom: 27.5px
+    &-tabs
+      &__tab
+        margin-right: 16px
+        &--soon
+          margin-right: 0
+    &-button
+      padding-left: 31px
+      padding-right: 30px
+      &__text
+        margin-top: 25px
+  .best
+    &-card
+      &--visible
+        min-width: 260px
+  .soon
+    &-card
+      &--visible
+        min-width: 260px
 @media (max-width: 576px)
   .container
     max-width: 500px
@@ -317,6 +453,190 @@
         text-align: center
     &-link
       display: none
+  .trends
+    &-container
+      max-width: 500px
+      width: 88%
+    &-wrapper
+      max-width: 450px
+      margin: auto
+      grid-template-columns: repeat(2, 210px)
+      grid-gap: 30px
+    &-card
+      width: 210px
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 55.5px
+    &-title
+      &__title
+        margin-bottom: 27.5px
+    &-tabs
+      &__tab
+        margin-right: 16px
+        &--soon
+          margin-right: 0
+    &-button
+      padding-left: 31px
+      padding-right: 30px
+      &__text
+        margin-top: 25px
+  .best
+    &-card
+      &--visible
+        min-width: 210px
+  .soon
+    &-card
+      &--visible
+        min-width: 210px
+@media (max-width: 510px)
+  .trends
+    &-container
+      max-width: 400px
+      width: 88%
+    &-wrapper
+      margin: auto
+      max-width: 350px
+      grid-template-columns: repeat(2, 160px)
+      grid-template-rows: repeat(2, 230px)
+      grid-gap: 30px
+    &-info
+      margin-bottom: 36px
+    &-card
+      width: 160px
+      &__img
+        max-height: 170px
+      &-info
+        margin-top: 13px
+        &__name
+          font-size: 16px
+          line-height: 20px
+        &-price
+          align-items: flex-start
+          justify-content: flex-start
+          &__price
+            font-size: 14px
+            line-height: 24px
+            margin-right: 9px
+    &-title
+      &__title
+        margin-bottom: 27.5px
+        font-size: 28px
+        line-height: 36px
+    &-tabs
+      &__tab
+        margin-right: 16px
+        font-size: 16px
+        line-height: 22px
+        &--soon
+          margin-right: 0
+    &-button
+      padding-top: 40px
+      padding-bottom: 23px
+      padding-left: 25px
+      padding-right: 25px
+      max-height: 170px
+      &__text
+        margin-top: 15px
+        font-size: 17px
+        line-height: 20px
+  .basket
+    &-icon
+      width: 14px
+      height: 25px
+  .best
+    &-card
+      &__img
+        max-height: 170px
+      &--visible
+        min-width: 160px
+  .soon
+    &-card
+      &__img
+        max-height: 170px
+      &__text
+        display: none
+      &--visible
+        min-width: 160px
+
+  .card
+    &-info
+      &__name
+        font-size: 16px
+@media (max-width: 400px)
+  .trends
+    &-container
+      max-width: 300px
+      width: 95%
+    &-wrapper
+      margin: auto
+      max-width: 300px
+      grid-template-columns: repeat(2, 140px)
+      grid-template-rows: repeat(2, 230px)
+      grid-gap: 20px
+    &-info
+      margin-bottom: 36px
+    &-card
+      width: 140px
+      &__img
+        max-height: 170px
+      &-info
+        margin-top: 13px
+        &__name
+          font-size: 16px
+          line-height: 20px
+        &-price
+          align-items: flex-start
+          justify-content: flex-start
+          &__price
+            font-size: 14px
+            line-height: 24px
+            margin-right: 9px
+    &-title
+      &__title
+        margin-bottom: 27.5px
+        font-size: 28px
+        line-height: 36px
+    &-tabs
+      &__tab
+        margin-right: 16px
+        font-size: 16px
+        line-height: 22px
+        &--soon
+          margin-right: 0
+    &-button
+      padding-top: 40px
+      padding-bottom: 23px
+      padding-left: 25px
+      padding-right: 25px
+      max-height: 170px
+      &__text
+        margin-top: 15px
+        font-size: 17px
+        line-height: 20px
+  .basket
+    &-icon
+      width: 14px
+      height: 25px
+  .best
+    &-card
+      &__img
+        max-height: 170px
+      &--visible
+        min-width: 140px
+  .soon
+    &-card
+      &__img
+        max-height: 170px
+      &__text
+        display: none
+      &--visible
+        min-width: 140px
+  .card
+    &-info
+      &__name
+        font-size: 16px
 @media (max-width: 320px)
   .container
     max-width: 290px
@@ -332,6 +652,7 @@
     &-window
       top: 64px
   .advantages
+    padding-bottom: 85px
     &-wrapper
       grid-template-columns: 138px 138px
       grid-template-rows: 290px 97px 335px
@@ -358,7 +679,80 @@
     &-info
       &__text
         max-height: 197px
-
+        max-width: 280px
+  .trends
+    &-container
+      max-width: 290px
+    &-wrapper
+      margin: auto
+      max-width: 290px
+      grid-template-columns: repeat(2, 140px)
+      grid-template-rows: repeat(2, 230px)
+      grid-column-gap: 10px
+      grid-row-gap: 24px
+    &-info
+      margin-bottom: 36px
+    &-card
+      width: 140px
+      &__img
+        max-height: 170px
+      &-info
+        margin-top: 13px
+        margin-left: 0
+        &__name
+          font-size: 16px
+          line-height: 20px
+        &-price
+          align-items: flex-start
+          justify-content: flex-start
+          &__price
+            font-size: 14px
+            line-height: 24px
+            margin-right: 9px
+    &-title
+      &__title
+        margin-bottom: 27.5px
+        font-size: 28px
+        line-height: 36px
+    &-tabs
+      &__tab
+        margin-right: 16px
+        font-size: 16px
+        line-height: 22px
+        &--soon
+          margin-right: 0
+    &-button
+      padding-top: 40px
+      padding-bottom: 23px
+      padding-left: 25px
+      padding-right: 25px
+      max-height: 170px
+      &__text
+        margin-top: 15px
+        font-size: 17px
+        line-height: 20px
+  .basket
+    &-icon
+      width: 14px
+      height: 25px
+  .best
+    &-card
+      &__img
+        max-height: 170px
+      &--visible
+        min-width: 140px
+  .soon
+    &-card
+      &__img
+        max-height: 170px
+      &__text
+        display: none
+      &--visible
+        min-width: 140px
+  .card
+    &-info
+      &__name
+        font-size: 16px
 @media (max-height: 495px)
   .navbar
     &-window
@@ -375,7 +769,7 @@
   .main
     &__button
       &:hover
-        background-color: #85a7ab
+        background-color: $button-hover
     &-icon
       &:hover
         background: rgba(54, 179, 126, 0.1)
@@ -389,3 +783,16 @@
       &:hover
         text-decoration: underline
         color: $blue
+  .trends
+    &-button
+      &:hover
+        background-color: $button-hover
+    &-tabs
+      &__tab
+        &:hover
+          text-decoration: underline
+  .basket
+    &-icon
+      &:hover
+        height: 30px
+        width: 30px
