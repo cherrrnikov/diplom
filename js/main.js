@@ -55,4 +55,35 @@ $(document).ready(function () {
     $(".trends-tabs__tab--best").removeClass("best-tab");
   })
 
+  // Слайдер с отзывами
+  var reviewsSlider = new Swiper('.swiper-container', {
+  speed: 700,
+  autoplay: {
+    enabled: true,
+    delay: 7000,
+    disableOnInteraction: false,
+  },
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  // Подключение клавиатуры
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  })
+  $(".swiper-container").on("mouseenter",function(){
+    reviewsSlider.autoplay.stop();
+  });
+  $(".swiper-container").on("mouseleave",function(){
+    reviewsSlider.autoplay.start();
+  });
 })
+
+
