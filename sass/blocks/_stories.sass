@@ -1,0 +1,102 @@
+.stories
+  padding-top: 120px
+  padding-bottom: 140px
+  &-container
+    position: relative
+    display: flex
+    justify-content: space-between
+    max-width: 1150px
+    margin: auto
+  &-info
+    width: 392px
+    &__sticker
+      display: inline-block
+      padding: 6px 16px
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      color: #36B37E
+      background: rgba(54, 179, 126, 0.1)
+      border-radius: 2000px
+      margin-bottom: 28px
+      text-transform: uppercase
+      margin-bottom: 28px
+    &__title
+      font-family: "HKGrotesk-Regular"
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: $primary
+      margin-top: 0
+      margin-bottom: 24px
+    &__text
+      margin: 0
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: $text-color
+  &-slider
+    position: relative
+    max-width: 662px
+    height: 475px
+    margin: 0
+    margin-top: 10px
+    &__item
+      display: flex
+      justify-content: space-between
+    &__half
+      width: 322px
+    &__img
+      width: 312px
+      height: 317px
+      object-fit: cover
+      border-radius: 8px 8px 0px 0px
+    &__info
+      width: 312px
+      height: 178px
+      background-color: #FAFDFF
+      padding: 20px 32px 20px 20px
+      transform: translate(3%, -15%)
+      overflow-y: auto
+    &__text
+      margin-top: 0
+      margin-bottom: 12px
+      font-family: "HKGrotesk-Regular"
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $primary
+    &__link
+      text-decoration: none
+    &__more
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $blue
+.slider
+  &-button
+    position: absolute
+    top: 79%
+    transform: translateY(-50%)
+    width: 54px
+    height: 56px
+    z-index: 99
+    border: none
+    outline: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 54px
+    background-color: transparent
+    &--next
+      width: 56px
+      left: 76px
+      background-image: url(../img/arrow-button-next.svg)
+    &--prev
+      background-image: url(../img/arrow-button-prev.svg)

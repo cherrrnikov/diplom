@@ -56,7 +56,7 @@ $(document).ready(function () {
   })
 
   // Слайдер с отзывами
-  var reviewsSlider = new Swiper('.swiper-container', {
+  var reviewsSlider = new Swiper('.reviews-slider', {
   speed: 700,
   autoplay: {
     enabled: true,
@@ -84,6 +84,25 @@ $(document).ready(function () {
   $(".swiper-container").on("mouseleave",function(){
     reviewsSlider.autoplay.start();
   });
+
+  // Слайдер с историями
+  var storiesSlider = new Swiper('.stories-slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-button--next',
+    prevEl: '.slider-button--prev',
+  },
+  effect: "fade",
+  // Подключение клавиатуры
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+})
 })
 
 

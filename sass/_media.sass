@@ -46,7 +46,6 @@
       grid-gap: 30px
     &-card
       width: 300px
-
   .best
     &-card
       &--visible
@@ -55,6 +54,24 @@
     &-card
       &--visible
         min-width: 300px
+  .stories
+    padding-bottom: 120px
+    &-container
+      max-width: 960px
+    &-info
+      max-width: 330px
+      &__title
+        font-size: 41px
+        line-height: 50px
+    &-slider
+      max-width: 600px
+      &__half
+        width: 290px
+      &__img
+        width: 280px
+        height: 300px
+      &__info
+        width: 281px
 
 @media (max-width: 992px)
   .container
@@ -137,6 +154,40 @@
     &-card
       &--visible
         min-width: 335px
+  .stories
+    padding-bottom: 50px
+    &-container
+      height: 390px
+      max-width: 760px
+    &-info
+      max-width: 250px
+      &__title
+        font-size: 30px
+        line-height: 37px
+        margin-bottom: 18px
+      &__text
+        font-size: 18px
+        line-height: 30px
+      &__sticker
+        margin-bottom: 20px
+    &-slider
+      max-width: 470px
+      &__half
+        width: 235px
+      &__img
+        width: 225px
+        height: 225px
+      &__info
+        width: 225px
+        height: 130px
+      &__text
+        font-size: 16px
+        line-height: 25px
+      &__more
+        font-size: 14px
+  .slider
+    &-button
+      top: 87%
 @media (max-width: 800px)
   .reviews
     &-container
@@ -296,6 +347,83 @@
   .swiper
     &-pagination
       top: 95.8%
+  .line
+    max-width: 94.79%
+  .stories
+    padding-top: 79px
+    padding-bottom: 80px
+    &-container
+      max-width: 682px
+      height: 807px
+      flex-direction: column
+      align-items: center
+    &-info
+      min-width: 567px
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__sticker
+        margin-bottom: 24px
+      &__title
+        font-size: 48px
+        line-height: 60px
+        margin-bottom: 16px
+      &__text
+        font-size: 20px
+        line-height: 36px
+        text-align: center
+        margin-bottom: 36px
+    &-slider
+      max-width: 682px
+      transform: translateY(-2px)
+      &__half
+        width: 322px
+      &__img
+        width: 322px
+        height: 317px
+      &__info
+        width: 322px
+        height: 178px
+        padding: 20px 42px 20px 22px
+      &__text
+        font-weight: 500
+        font-size: 22px
+        line-height: 32px
+        margin-bottom: 22px
+      &__more
+        font-size: 16px
+        line-height: 22px
+  .slider
+    &-button
+      top: 33%
+      margin-bottom: 36px
+      z-index: 2
+      &--next
+        left: 52%
+      &--prev
+        left: 40.5%
+@media (max-width: 700px)
+  .stories
+    &-container
+      max-width: 576px
+      height: 807px
+    &-slider
+      max-width: 576px
+      transform: translateY(-2px)
+      &__half
+        width: 278px
+      &__img
+        width: 268px
+      &__info
+        width: 268px
+  .slider
+    &-button
+      top: 33%
+      &--next
+        left: 52%
+      &--prev
+        left: 39%
+
 @media (max-width: 661px)
   .trends
     &-container
@@ -531,6 +659,53 @@
   .swiper
     &-pagination
       top: 89%
+  .stories
+    padding-top: 47px
+    padding-bottom: 64px
+    &-container
+      max-width: 500px
+      height: 1134px
+      justify-content: flex-start
+      width: 95%
+    &-info
+      min-width: 280px
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        font-size: 16px
+        line-height: 28px
+    &-slider
+      max-width: 500px
+      height: 100%
+      transform: translateY(82px)
+      width: 95%
+      &__item
+        flex-direction: column
+      &__half
+        width: 100%
+        flex-basis: 100%
+        z-index: 99
+      &__img
+        width: 97%
+        height: 277px
+      &__info
+        width: 100%
+        padding: 20px
+      &__text
+        font-size: 20px
+        line-height: 24px
+        width: 230px
+        margin-bottom: 16px
+  .slider
+    &-button
+      top: 22.5%
+      &--next
+        left: 52%
+      &--prev
+        left: 37%
+  .this
+    display: none
 @media (max-width: 510px)
   .trends
     &-container
@@ -605,6 +780,13 @@
     &-info
       &__name
         font-size: 16px
+@media (max-width: 436px)
+  .slider
+    &-button
+      &--next
+        left: 55%
+      &--prev
+        left: 30%
 @media (max-width: 400px)
   .trends
     &-container
@@ -678,6 +860,11 @@
     &-info
       &__name
         font-size: 16px
+@media (max-width: 355px)
+  .reviews
+    &-slider
+      &__text
+        height: 288px
 @media (max-width: 320px)
   .container
     max-width: 290px
@@ -796,7 +983,7 @@
       &__name
         font-size: 16px
   .reviews
-    padding-bottom: 64px
+    padding-bottom: 50px
     &-container
       max-width: 280px
       width: 90%
@@ -804,7 +991,7 @@
       &__item
         height: 580px
       &__text
-        max-height: 360px
+        height: 360px
   .swiper
     &-pagination
       top: 94%
@@ -812,7 +999,53 @@
     &-name
       width: 145px
       text-align: left
-
+  .stories
+    padding-top: 47px
+    padding-bottom: 64px
+    &-container
+      max-width: 280px
+      height: 1160px
+      justify-content: flex-start
+      width: 100%
+    &-info
+      min-width: 280px
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        font-size: 16px
+        line-height: 28px
+    &-slider
+      max-width: 500px
+      height: 100%
+      transform: translateY(82px)
+      width: 100%
+      &__item
+        flex-direction: column
+      &__half
+        min-width: 270px
+        flex-basis: 100%
+        z-index: 99
+      &__img
+        width: 270px
+        height: 277px
+      &__info
+        width: 270px
+        height: 150px
+        padding: 20px
+      &__text
+        font-size: 20px
+        line-height: 24px
+        width: 230px
+        margin-bottom: 16px
+  .slider
+    &-button
+      &--next
+      &--prev
+        left: 29%
+  .line
+    max-width: 100%
+    margin: 0
 @media (max-height: 495px)
   .navbar
     &-window
@@ -856,6 +1089,9 @@
       &:hover
         height: 30px
         width: 30px
-  .swiper
-    &-container
-      data-swiper-autoplay: "100000000000"
+  .slider
+    &-info
+      &__link
+        &:hover
+          text-decoration: underline
+          color: $blue
