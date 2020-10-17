@@ -1,3 +1,6 @@
+@media (max-width: 1440px)
+  .newsletter
+    background-image: url("../img/newsletter-background.png")
 @media (max-width: 1300px)
   .main
     &-container
@@ -72,6 +75,18 @@
         height: 300px
       &__info
         width: 281px
+  .newsletter
+    &-container
+      padding: 80px 150px 85px 130px
+    &-info
+      max-width: 380px
+  .subscribe
+    &__input
+      padding-right: 47%
+    &__button
+      width: 43%
+      padding: 11px 0
+      font-size: 16px
 
 @media (max-width: 992px)
   .container
@@ -115,7 +130,6 @@
       grid-template-columns: 330px 330px
       grid-column-gap: 40px
       grid-row-gap: 30px
-
     &__photo-1
       width: 330px
       height: 490px
@@ -149,7 +163,6 @@
     &-card
       &--visible
         min-width: 335px
-
   .soon
     &-card
       &--visible
@@ -188,6 +201,27 @@
   .slider
     &-button
       top: 87%
+  .newsletter
+    height: 402px
+    background-image: url("../img/newsletter-background-768.png")
+    margin-bottom: 64px
+    &-container
+      flex-direction: column
+      text-align: center
+      height: 100%
+      padding: 72px 0px 80px 0px
+    &-info
+      max-width: 436px
+  .subscribe
+    width: 447px
+    &__input
+      width: 447px
+      padding: 17px 192px 17px 48px
+
+    &__button
+      width: 177px
+      padding: 11px 0
+      font-size: 18px
 @media (max-width: 800px)
   .reviews
     &-container
@@ -706,6 +740,53 @@
         left: 37%
   .this
     display: none
+  .newsletter
+    height: 414px
+    background-image: url("../img/newsletter-background-768.png")
+    margin-bottom: 64px
+    margin-top: 48px
+    &-container
+      flex-direction: column
+      text-align: center
+      height: 100%
+      padding: 64px 20px 64px 20px
+    &-info
+      max-width: 280px
+      &__title
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 24px
+      &__text
+        display: block
+        font-size: 16px
+        line-height: 28px
+        margin-bottom: 36px
+  .subscribe
+    flex-direction: column
+    width: 280px
+    height: 106px
+    &__input
+      width: 280px
+      height: 48px
+      padding: 13px 48px 13px 48px
+      font-size: 16px
+      line-height: 22px
+    &__button
+      top: 57px
+      left: 0
+      width: 280px
+      height: 48px
+      padding: 11px 0
+      font-size: 18px
+      border-radius: 8px
+      font-size: 18px
+      line-height: 25px
+    &__icon
+      position: absolute
+      width: 16px
+      height: 18px
+      top: 16px
+      left: 20px
 @media (max-width: 510px)
   .trends
     &-container
@@ -1057,6 +1138,9 @@
   .line
     max-width: 100%
     margin: 0
+  .subscribe
+    &__button
+      top: 58px
 @media (max-height: 495px)
   .navbar
     &-window

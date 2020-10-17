@@ -565,8 +565,36 @@
     </div>
     <!-- /.stories-container -->
   </section>
+
+  <!-- Секция с подпиской -->
+
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-info">
+        <h3 class="newsletter-info__title">Подпишитесь</h3>
+        <p class="newsletter-info__text"><span class="string">Напишите свой адрес электронной почты.</span>
+        <span class="string">Мы будем присылать вам новости из мира моды.</span></p> 
+      </div>
+      <!-- /.newsletter-info -->
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+        <div class="subscribe-input__group">
+          <input
+           type="email" 
+           class="input subscribe__input" 
+           placeholder="Ваш Email" 
+           name="email"
+           required />
+           <img src="img/email-icon.svg" alt="Иконка: Email" class="subscribe__icon">
+        </div>
+        <!-- /.subscribe-input__group -->
+        <button class="subscribe__button" type="submit">Подписаться</button>
+      </form>
+    </div>
+    <!-- /.newsletter-container -->
+  </section>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
