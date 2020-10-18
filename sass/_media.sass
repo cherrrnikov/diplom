@@ -1,7 +1,12 @@
+@media (max-width: 1550px)
+  .newsletter
+    &-container
+      margin-left: 153px
+      margin-right: 213px
 @media (max-width: 1440px)
   .newsletter
     &-container
-      background-image: url("../img/newsletter-background.png")
+
 @media (max-width: 1300px)
   .main
     &-container
@@ -78,7 +83,10 @@
         width: 281px
   .newsletter
     &-container
-      padding: 80px 150px 85px 130px
+      padding-top: 80px
+      margin-right: 150px
+      margin-left: 130px
+      padding-bottom: 85px
     &-info
       max-width: 380px
   .subscribe
@@ -210,7 +218,6 @@
       top: 87%
   .newsletter
     &-container
-      background-image: url("../img/newsletter-background-768.png")
       flex-direction: column
       text-align: center
       height: 402px
@@ -454,6 +461,9 @@
       &--prev
         left: 40.5%
   .newsletter
+    background-image: url("../img/newsletter-background-768.png")
+    &-container
+      margin: 0
     &__thankyou
       padding-top: 100px
 @media (max-width: 767px)
@@ -1316,6 +1326,12 @@
         &:hover
           text-decoration: underline
           color: $blue
+    &-button
+      &--next, &--prev
+        &:hover
+          background-color: rgba(54, 179, 126, 0.1)
+          opacity: 1
+          border-radius: 50%
   .subscribe
     &__button
       &:hover
@@ -1336,7 +1352,7 @@
   .to
     &-top
       &:hover
-        background-color: #c9ecff
+        background-color: rgba(54, 179, 126, 0.1)
   .thankyou
     &-button
       &:hover
