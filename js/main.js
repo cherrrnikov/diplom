@@ -129,10 +129,41 @@ $(document).ready(function () {
           required: "Укажите номер телефона",
           minlength: "Пример: +7 (xxx)-xxx-xx-xx",
         },
+        subscribeEmail : {
+          required: "Пожалуйста, укажите Вашу почту",
+          email: "Пример: name@domain.com",
+        },
       },
     });
   });
+  // Модальные окна
+  var modalButton = $("[data-toggle=modal]");
+  var closeModalButton = $(".modal__close");
+  var closeModalOverlay = $('.modal__overlay')
+  modalButton.on("click", openModal);
+  closeModalButton.on("click", closeModal);
+  closeModalOverlay.on("click", closeModal);
+
+  function openModal() {
+    var targetModal = $(this).attr("data-href");
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+  }
+
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  }
+  // Сокрытие модального окна при нажатии на Escape
+  $('body').on('keydown', function(e) {
+   if(e.keyCode == 27) { // when Enter key is pressed trigger click event for first button 
+      $('.modal__overlay').removeClass('modal__overlay--visible')
+      $('.modal__dialog').removeClass('modal__dialog--visible')
+   }
+  });
   $(".phone").mask("+7 (000)-000-00-00")
 })
-
 

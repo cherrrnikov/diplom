@@ -222,16 +222,10 @@
     &__input
       width: 447px
       padding: 17px 192px 17px 48px
-
     &__button
       width: 177px
       padding: 11px 0
       font-size: 18px
-  #email-error
-    position: absolute
-    z-index: 99
-    left: 0
-    top: 55px
   .footer
     &-container
       padding-top: 64px
@@ -292,7 +286,7 @@
       background-color: #f5f5f5
       &--visible
         display: block
-        z-index: 200
+        z-index: 2000
       &--hidden
         display: none
   .menu
@@ -805,7 +799,7 @@
   .subscribe
     flex-direction: column
     width: 280px
-    min-height: 125px
+    min-height: 128px
     &__input
       width: 280px
       height: 48px
@@ -828,10 +822,8 @@
       height: 18px
       top: 16px
       left: 20px
-  #email-error
+  .invalid
     font-size: 14px
-    top: 104px
-    left: 9%
   .footer
     &-container
       padding-top: 48px
@@ -878,6 +870,11 @@
       margin-bottom: 14px
   .linkedin
     margin-right: 0
+  #subscribeEmail-error
+    position: absolute
+    left: 20px
+    top: 105px
+    z-index: 200
 @media (max-width: 510px)
   .trends
     &-container
@@ -1032,6 +1029,9 @@
     &-info
       &__name
         font-size: 16px
+  .modal
+    &__dialog
+      padding: 33px 40px
 @media (max-width: 355px)
   .reviews
     &-slider
@@ -1236,8 +1236,12 @@
     &__thankyou
       padding-top: 64px
   .subscribe
+    min-height: 130px
     &__button
       top: 58px
+    &__input
+      &-group
+        min-height: 130px
   .footer
     &-wrapper
       margin-left: 34px
@@ -1245,6 +1249,30 @@
   .navbar
     &-window
       overflow-y: scroll
+@media (max-height: 453px)
+  .modal
+    &__dialog
+      height: 80%
+      width: 700px
+      padding: 25px 50px
+    &__form
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      max-width: 500px
+      flex-wrap: wrap
+    &__input
+      width: 100%
+      &-group
+        width: 48%
+    &__button
+      flex-basis: 48%
+      padding: 11px
+  .invalid
+    font-size: 14px
+@media (max-height: 328px)
+  .invalid
+    font-size: 12px
 @media (min-width: 991px)
   .navbar
     &-button
@@ -1303,3 +1331,7 @@
     &__link
       &:hover
         color: $blue
+  .modal
+    &__button
+      &:hover
+        background-color: $button-hover

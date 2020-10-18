@@ -23,7 +23,7 @@
               <a href="#reviews" class="navbar-menu__link">Отзывы</a>
               <a href="#" class="navbar-menu__link navbar-menu__link-contact">Контакты</a>
             </nav>
-            <button data-href="#" class="navbar-button">Войти</button>
+            <button data-href="#enter-modal" class="navbar-button" data-toggle="modal">Войти</button>
         </div>
         <!-- /.navbar-inter -->
         <button class="menu-button navbar-top__menu-button">
@@ -43,7 +43,7 @@
           <a href="#trends" class="navbar-menu__link">Тренды</a>
           <a href="#reviews" class="navbar-menu__link">Отзывы</a>
           <a href="#" class="navbar-menu__link navbar-menu__link-contact">Контакты</a>
-          <button class="navbar-button">Войти</button>
+          <button class="navbar-button" data-href="#enter-modal" data-toggle="modal">Войти</button>
         </nav>
   </div>
   <!-- ./navbar-window -->
@@ -58,7 +58,7 @@
               здесь. Начните сейчас.</p>
           </div>
           <!-- /.main-info -->
-          <button class="main__button">Подобрать одежду</button>
+          <button class="main__button" data-toggle="modal" data-href="#enter-modal">Подобрать одежду</button>
           <div class="main-links">
             <a href="#" class="main-links__link">
               <img src="img/pay.svg" alt="Иконка: Онлайн оплата" class="main-icon">
@@ -576,13 +576,13 @@
         <span class="string">Мы будем присылать вам новости из мира моды.</span></p> 
       </div>
       <!-- /.newsletter-info -->
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form subscribe__form">
         <div class="subscribe-input__group">
           <input
            type="email" 
            class="input subscribe__input" 
            placeholder="Ваш Email" 
-           name="email"
+           name="subscribeEmail"
            required />
            <img src="img/email-icon.svg" alt="Иконка: Email" class="subscribe__icon">
         </div>
@@ -696,6 +696,32 @@
     </div>
     <!-- /.footer-container -->
   </section>
+  <div class="modal" id="enter-modal">
+    <div class="modal__overlay">
+    </div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Закрыть" class="close-icon">
+      </a>
+      <h3 class="modal__title modal__title--mb-3">Регистрация</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <div class="modal__input-group">
+            <input type="text" class="input modal__input" placeholder="Имя" name="name" required="" minlength="2" />
+          </div>
+          <div class="modal__input-group">
+            <input type="tel" class="input modal__input phone" placeholder="Телефон" name="phone" required=""
+              minlength="18" />
+          </div>
+          <div class="modal__input-group">
+            <input type="email" class="input modal__input" placeholder="Почта" name="email" required="" />
+          </div>
+          <button class="button modal__button" type="submit">Отправить</button>
+        </form>
+    </div>
+    <!-- /.modal__dialog-->
+  </div>
+  <!-- /.modal -->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>

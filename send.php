@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
+$subscribeEmail = $_POST['subscribeEmail'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
@@ -15,14 +16,16 @@ $title = "Новое обращение Best Tour Plan";
 if ($phone && $email) {
     $title = "Новое обращение Ehya Store";
     $body = "
-      <h2>Новое сообщение от </h2>$name<br>
+      <h2>Заявка на регистрацию</h2><br>
+      <b>Имя:</b> $name<br>
       <b>Телефон:</b> $phone<br>
-      <b>Почта:</b><br>$email<br>
+      <b>Почта:</b> $email<br>
     ";
 } else {
     $title = "Новое обращение Ehya Store";
     $body = "
-      <b>Почта:</b><br>$email  
+      <h2>Заявка на подписку</h2><br>
+      <b>Почта:</b> $subscribeEmail  
     ";
 }
 
