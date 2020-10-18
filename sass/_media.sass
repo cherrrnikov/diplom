@@ -88,7 +88,13 @@
       width: 43%
       padding: 11px 0
       font-size: 16px
-
+  .footer
+    &-container
+      padding-left: 0px
+    &-wrapper
+      max-width: 960px
+      margin: auto
+      grid-gap: 30px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -203,7 +209,6 @@
     &-button
       top: 87%
   .newsletter
-    padding-bottom: 64px
     &-container
       background-image: url("../img/newsletter-background-768.png")
       flex-direction: column
@@ -222,6 +227,24 @@
       width: 177px
       padding: 11px 0
       font-size: 18px
+  #email-error
+    position: absolute
+    z-index: 99
+    left: 0
+    top: 55px
+  .footer
+    &-container
+      padding-top: 64px
+      padding-bottom: 130px
+    &-wrapper
+      max-width: 626px
+      grid-template-columns: 237px 148px 143px
+      grid-template-rows: 262px 210px
+      grid-gap: 48px
+    &__company
+      grid-column: 2
+    &__contacts
+      grid-column: 3
 @media (max-width: 800px)
   .reviews
     &-container
@@ -436,6 +459,27 @@
         left: 52%
       &--prev
         left: 40.5%
+  .newsletter
+    &__thankyou
+      padding-top: 100px
+@media (max-width: 767px)
+  .footer
+    &-container
+      padding-top: 64px
+      padding-bottom: 130px
+    &-wrapper
+      max-width: 530px
+      grid-template-columns: 176px 148px 143px
+      grid-template-rows: 280px 210px
+      grid-column-gap: 30px
+    &__company
+      grid-column: 2
+    &__contacts
+      grid-column: 3
+    &-links
+      &__icon
+        margin-right: 10px
+        margin-bottom: 10px
 @media (max-width: 700px)
   .stories
     &-container
@@ -695,7 +739,7 @@
       top: 89%
   .stories
     padding-top: 47px
-    padding-bottom: 64px
+    padding-bottom: 144px
     &-container
       max-width: 500px
       height: 1134px
@@ -741,8 +785,6 @@
   .this
     display: none
   .newsletter
-    padding-top: 80px
-    padding-bottom: 64px
     &-container
       height: 414px
       background-image: url("../img/newsletter-background-768.png")
@@ -763,7 +805,7 @@
   .subscribe
     flex-direction: column
     width: 280px
-    height: 106px
+    min-height: 125px
     &__input
       width: 280px
       height: 48px
@@ -786,6 +828,57 @@
       height: 18px
       top: 16px
       left: 20px
+  #email-error
+    font-size: 14px
+    top: 104px
+    left: 9%
+  .footer
+    &-container
+      padding-top: 48px
+      padding-bottom: 73px
+    &-wrapper
+      max-width: 263px
+      margin-left: 34px
+      grid-template-columns: 263px
+      grid-template-rows: 202px 202px 167px 97px 185px
+      grid-column-gap: 0
+      grid-row-gap: 30px
+    &__navigation
+      grid-row: 1
+    &__services
+      grid-row: 2
+    &__company
+      grid-row: 3
+      grid-column: 1
+    &__contacts
+      grid-row: 4
+      grid-column: 1
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__item
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 15px
+    &-links
+      align-items: center
+      margin-top: 37px
+      &__text
+        max-width: 260px
+        text-align: center
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 16px
+      &__icon
+        margin-right: 6px
+        margin-bottom: 0
+      &__logo
+        height: 43px
+    &__logo
+      margin-bottom: 14px
+  .linkedin
+    margin-right: 0
 @media (max-width: 510px)
   .trends
     &-container
@@ -1139,9 +1232,10 @@
     margin: 0
   .newsletter
     padding-top: 0
-    padding-bottom: 48px
     &-container
       background-image: url("../img/newsletter-background-320.png")
+    &__thankyou
+      padding-top: 64px
   .subscribe
     &__button
       top: 58px
@@ -1198,3 +1292,12 @@
     &__button
       &:hover
         background-color: $button-hover
+  .footer
+    &-links
+      &__icon
+        &:hover
+          border: 3px solid $primary
+          border-radius: 52%
+    &__link
+      &:hover
+        color: $blue

@@ -103,6 +103,36 @@ $(document).ready(function () {
     onlyInViewport: true,
   },
 })
+  // Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        phone: {
+          required: true,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        name: {
+          required: "Укажите Ваше имя",
+          minlength: "Имя должно быть не короче двух символов",
+        },
+        email: {
+          required: "Пожалуйста, укажите Вашу почту",
+          email: "Пример: name@domain.com",
+        },
+        phone: {
+          required: "Укажите номер телефона",
+          minlength: "Пример: +7 (xxx)-xxx-xx-xx",
+        },
+      },
+    });
+  });
+  $(".phone").mask("+7 (000)-000-00-00")
 })
 
 
