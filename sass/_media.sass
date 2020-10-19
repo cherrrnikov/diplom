@@ -1,16 +1,11 @@
 @media (max-width: 1550px)
   .newsletter
     &-container
-      margin-left: 153px
+      margin-left: 150px
       margin-right: 213px
   .footer
     &-container
       margin-left: 150px
-      margin-right: 248px
-@media (max-width: 1440px)
-  .newsletter
-    &-container
-
 @media (max-width: 1300px)
   .main
     &-container
@@ -88,8 +83,8 @@
   .newsletter
     &-container
       padding-top: 80px
-      margin-right: 150px
-      margin-left: 130px
+      max-width: 960px
+      margin: auto
       padding-bottom: 85px
     &-info
       max-width: 380px
@@ -231,6 +226,7 @@
       max-width: 436px
   .subscribe
     width: 447px
+    transform: translateX(0)
     &__input
       width: 447px
       padding: 17px 192px 17px 48px
@@ -1082,6 +1078,7 @@
     &-window
       top: 64px
   .main
+    padding-bottom: 64px
     &__title
       width: 244px
       letter-spacing: 0.9px
@@ -1285,10 +1282,10 @@
       &--next
         width: 48px
         height: 48px
-        background-image: url(../img/next.svg)
         background-size: 48px 48px
         margin-right: 15px
         left: 53%
+        transform: scale(-1) translateY(23px)
       &--prev
         width: 48px
         height: 48px
@@ -1369,11 +1366,14 @@
           text-decoration: underline
           color: $blue
     &-button
-      &--next, &--prev
+      &--next
         &:hover
-          background-color: rgba(54, 179, 126, 0.1)
-          opacity: 1
-          border-radius: 50%
+          background-image: url(../img/arrow-button-next.svg)
+          transform: scale(1) translateY(-27px)
+      &--prev
+        &:hover
+          background-image: url(../img/arrow-button-next.svg)
+          transform: scale(-1) translateY(27px)
   .subscribe
     &__button
       &:hover
