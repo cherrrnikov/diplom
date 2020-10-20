@@ -345,9 +345,9 @@
       width: 100%
       max-height: 490px
     &__photo-2
-      max-width: 97%
+      max-width: 100%
     &__photo-3
-      max-width: 97%
+      max-width: 100%
       grid-column: 2
     &-info
       max-width: 100%
@@ -560,44 +560,12 @@
   .reviews
     &-container
       max-width: 550px
-@media (max-width: 606px)
-  .trends
-    &-container
-      max-width: 550px
-      width: 95%
-    &-wrapper
-      max-width: 550px
-      grid-template-columns: repeat(2, 260px)
-      grid-gap: 30px
-    &-card
-      width: 260px
-    &-info
-      display: flex
-      flex-direction: column
-      align-items: center
-      margin-bottom: 55.5px
-    &-title
-      &__title
-        margin-bottom: 27.5px
-    &-tabs
-      &__tab
-        margin-right: 16px
-        &--soon
-          margin-right: 0
-    &-button
-      padding-left: 31px
-      padding-right: 30px
-      &__text
-        margin-top: 25px
-  .best
-    &-card
-      &--visible
-        min-width: 260px
-  .soon
-    &-card
-      &--visible
-        min-width: 260px
-@media (max-width: 576px)
+@media (max-width: 607px)
+  .basket
+    &-icon
+      width: 14px
+      height: 14px
+      margin-top: 7px
   .container
     max-width: 500px
     width: 88%
@@ -699,35 +667,6 @@
         text-align: center
     &-link
       display: none
-  .trends
-    &-container
-      max-width: 500px
-      width: 88%
-    &-wrapper
-      max-width: 450px
-      margin: auto
-      grid-template-columns: repeat(2, 210px)
-      grid-gap: 30px
-    &-card
-      width: 210px
-    &-info
-      display: flex
-      flex-direction: column
-      align-items: center
-      margin-bottom: 55.5px
-    &-title
-      &__title
-        margin-bottom: 27.5px
-    &-tabs
-      &__tab
-        margin-right: 16px
-        &--soon
-          margin-right: 0
-    &-button
-      padding-left: 31px
-      padding-right: 30px
-      &__text
-        margin-top: 25px
   .best
     &-card
       &--visible
@@ -899,6 +838,381 @@
     left: 20px
     top: 105px
     z-index: 200
+  .trends
+    &-container
+      max-width: 500px
+      width: 88%
+    &-wrapper
+      margin: auto
+      max-width: 450px
+      grid-template-columns: repeat(2, 210px)
+      grid-template-rows: repeat(2, 280px)
+      grid-gap: 30px
+    &-info
+      margin-bottom: 36px
+    &-card
+      width: 160px
+      &__img
+        width: 210px
+        max-height: 220px
+      &-info
+        margin-top: 13px
+        &__name
+          font-size: 16px
+          line-height: 20px
+        &-price
+          align-items: flex-start
+          justify-content: flex-start
+          &__price
+            font-size: 14px
+            line-height: 24px
+            margin-right: 9px
+    &-title
+      &__title
+        margin-bottom: 27.5px
+        font-size: 28px
+        line-height: 36px
+    &-tabs
+      &__tab
+        margin-right: 16px
+        font-size: 16px
+        line-height: 22px
+        &--soon
+          margin-right: 0
+    &-button
+      padding-top: 40px
+      padding-bottom: 23px
+      padding-left: 25px
+      padding-right: 25px
+      max-height: 220px
+      font-size: 17px
+      line-height: 20px
+      &__icon
+        margin-bottom: 15px
+@media (max-width: 576px)
+  .container
+    max-width: 500px
+    width: 88%
+  .main
+    margin-top: 88px
+    &-container
+      max-width: 100%
+      border-radius: 0
+      background-image: url(../img/main-photo-320.png)
+      background-position: top
+      background-size: cover
+      padding-left: 1px
+      padding-bottom: 20px
+      padding-top: 1px
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 280px
+      margin: auto
+      margin-top: 381px
+      padding: 0
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__hashtag
+      padding: 2px 26.6px
+      margin-bottom: 20px
+    &__title
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+    &__text
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      margin-bottom: 24px
+    &__button
+      width: 257px
+      margin-bottom: 22px
+      padding: 13px 49px
+      font-size: 16px
+      line-height: 22px
+    &-links
+      flex-wrap: wrap
+      max-width: 274px
+      &__link
+        font-size: 16px
+        margin-bottom: 16px
+    &-icon
+      width: 24px
+      height: 24px
+      object-fit: cover
+  .like
+    &-link
+      transform: translateX(75%)
+  .advantages
+    &-wrapper
+      grid-template-columns: 48.5% 48.5%
+      grid-template-rows: 290px 138px 288px
+      grid-gap: 14px
+    &-photos
+      grid-template-columns: 100% 100%
+      grid-template-rows: 290px 138px 288px
+      grid-gap: 14px
+    &__photo-1
+      grid-column: span 2
+      grid-row: 1
+      width: 100%
+      height: 290px
+    &__photo-2
+      max-width: 100%
+      height: 145px
+      grid-column: 1 / 2
+      grid-row: 2
+    &__photo-3
+      max-width: 100%
+      height: 145px
+      grid-column: 2
+      grid-row: 2
+    &-info
+      grid-column: span 2
+      grid-row: 3
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 22px
+      &__title
+        text-align: center
+        font-size: 33px
+        line-height: 36px
+        margin-bottom: 20px
+        margin-top: 0
+      &__text
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+    &-link
+      display: none
+  .best
+    &-card
+      &--visible
+        min-width: 210px
+  .soon
+    &-card
+      &--visible
+        min-width: 210px
+  .reviews
+    padding-bottom: 20px
+    &-container
+      max-width: 400px
+      width: 90%
+    &-slider
+      &__item
+        height: 555px
+      &__text
+        font-size: 18px
+        line-height: 36px
+        margin-bottom: 24px
+      &__name
+        margin-bottom: 24px
+    &__img
+      margin-bottom: 13px
+  .swiper
+    &-pagination
+      top: 89%
+  .stories
+    padding-top: 57px
+    padding-bottom: 144px
+    &-container
+      max-width: 500px
+      height: 1134px
+      justify-content: flex-start
+      width: 95%
+    &-info
+      min-width: 280px
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        font-size: 16px
+        line-height: 28px
+    &-slider
+      max-width: 500px
+      height: 100%
+      transform: translateY(82px)
+      width: 95%
+      &__item
+        flex-direction: column
+      &__half
+        width: 100%
+        flex-basis: 100%
+        z-index: 99
+      &__img
+        width: 97%
+        height: 277px
+      &__info
+        width: 100%
+        padding: 20px
+      &__text
+        font-size: 20px
+        line-height: 24px
+        width: 230px
+        margin-bottom: 16px
+  .slider
+    &-button
+      top: 21%
+      &--next
+        left: 52%
+      &--prev
+        left: 37%
+  .this
+    display: none
+  .newsletter
+    &-container
+      height: 414px
+      background-image: url("../img/newsletter-background-768.png")
+      flex-direction: column
+      text-align: center
+      padding: 64px 20px 64px 20px
+    &-info
+      max-width: 280px
+      &__title
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 24px
+      &__text
+        display: block
+        font-size: 16px
+        line-height: 28px
+        margin-bottom: 36px
+  .subscribe
+    flex-direction: column
+    width: 280px
+    min-height: 128px
+    &__input
+      width: 280px
+      height: 48px
+      padding: 13px 48px 13px 48px
+      font-size: 16px
+      line-height: 22px
+    &__button
+      top: 57px
+      left: 0
+      width: 280px
+      height: 48px
+      padding: 11px 0
+      font-size: 18px
+      border-radius: 8px
+      font-size: 18px
+      line-height: 25px
+    &__icon
+      position: absolute
+      width: 16px
+      height: 18px
+      top: 16px
+      left: 20px
+  .invalid
+    font-size: 14px
+  .footer
+    &-container
+      padding-top: 48px
+      padding-bottom: 73px
+    &-wrapper
+      max-width: 263px
+      grid-template-columns: 263px
+      grid-template-rows: 202px 202px 167px 97px 185px
+      grid-column-gap: 0
+      grid-row-gap: 30px
+    &__navigation
+      grid-row: 1
+    &__services
+      grid-row: 2
+    &__company
+      grid-row: 3
+      grid-column: 1
+    &__contacts
+      grid-row: 4
+      grid-column: 1
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__item
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 15px
+    &-links
+      align-items: center
+      margin-top: 37px
+      &__text
+        max-width: 260px
+        text-align: center
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 16px
+      &__icon
+        margin-right: 6px
+        margin-bottom: 0
+      &__logo
+        height: 43px
+    &__logo
+      margin-bottom: 14px
+  .linkedin
+    margin-right: 0
+  #subscribeEmail-error
+    position: absolute
+    left: 20px
+    top: 105px
+    z-index: 200
+  .trends
+    &-container
+      max-width: 400px
+      width: 88%
+    &-wrapper
+      margin: auto
+      max-width: 350px
+      grid-template-columns: repeat(2, 160px)
+      grid-template-rows: repeat(2, 230px)
+      grid-gap: 30px
+    &-info
+      margin-bottom: 36px
+    &-card
+      width: 160px
+      &__img
+        width: 160px
+        max-height: 170px
+      &-info
+        margin-top: 13px
+        &__name
+          font-size: 16px
+          line-height: 20px
+        &-price
+          align-items: flex-start
+          justify-content: flex-start
+          &__price
+            font-size: 14px
+            line-height: 24px
+            margin-right: 9px
+    &-title
+      &__title
+        margin-bottom: 27.5px
+        font-size: 28px
+        line-height: 36px
+    &-tabs
+      &__tab
+        margin-right: 16px
+        font-size: 16px
+        line-height: 22px
+        &--soon
+          margin-right: 0
+    &-button
+      padding-top: 40px
+      padding-bottom: 23px
+      padding-left: 25px
+      padding-right: 25px
+      max-height: 170px
+      font-size: 17px
+      line-height: 20px
+      &__icon
+        margin-bottom: 15px
 @media (max-width: 510px)
   .trends
     &-container
@@ -973,6 +1287,11 @@
     &-info
       &__name
         font-size: 16px
+  .basket
+    &-icon
+      width: 14px
+      height: 14px
+      margin-top: 7px
 @media (max-width: 436px)
   .slider
     &-button
@@ -981,6 +1300,9 @@
       &--prev
         left: 30%
 @media (max-width: 400px)
+  .basket
+    &-icon
+      margin-top: 2px
   .trends
     &-container
       max-width: 300px
@@ -996,6 +1318,7 @@
     &-card
       width: 140px
       &__img
+        width: 140px
         max-height: 170px
       &-info
         margin-top: 13px
@@ -1167,10 +1490,6 @@
       max-height: 170px
       font-size: 17px
       line-height: 20px
-      margin-top: -7px
-  .red
-    &-formal
-      margin-top: -7px
   .basket
     &-icon
       width: 14px
