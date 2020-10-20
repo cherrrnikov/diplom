@@ -4,7 +4,7 @@ $(document).ready(function () {
   menuButton.on("click", function() {
     $(".navbar-window").toggleClass("navbar-window--visible");
   })
-  var closeButton = $(".navbar__close");
+  var closeButton = $(".navbar-window__close");
   closeButton.on("click", function() {
     $(".navbar-window").removeClass("navbar-window--visible");
   })
