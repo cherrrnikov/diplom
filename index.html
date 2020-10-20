@@ -11,7 +11,7 @@
 </head>
 <body>
   <!-- Шапка сайта -->
-  <header class="navbar navbar-mobile navbar-mobile--fixed">
+  <header class="navbar navbar-mobile navbar-mobile--fixed" id="navbar">
     <div class="container">
       <div class="navbar-top">
         <a href="index.html" class="logo-link"><img src="img/logo.svg" alt="Логотип: ehya" class="logo-img"></a>
@@ -21,7 +21,7 @@
               <a href="#advantages" class="navbar-menu__link">Новинки</a>
               <a href="#trends" class="navbar-menu__link">Тренды</a>
               <a href="#reviews" class="navbar-menu__link">Отзывы</a>
-              <a href="#" class="navbar-menu__link navbar-menu__link-contact">Контакты</a>
+              <a href="#footer" class="navbar-menu__link navbar-menu__link-contact">Контакты</a>
             </nav>
             <button data-href="#enter-modal" class="navbar-button" data-toggle="modal">Войти</button>
         </div>
@@ -37,12 +37,15 @@
     <!-- ./container -->
   </header>
   <div class="navbar-window">
+    <a href="#" class="navbar__close">
+      <img src="img/close-2.svg" alt="Закрыть" class="close-icon">
+    </a>
         <nav class="navbar-menu">
           <a href="#main" class="navbar-menu__link">Главная</a>
           <a href="#advantages" class="navbar-menu__link">Новинки</a>
           <a href="#trends" class="navbar-menu__link">Тренды</a>
           <a href="#reviews" class="navbar-menu__link">Отзывы</a>
-          <a href="#" class="navbar-menu__link navbar-menu__link-contact">Контакты</a>
+          <a href="#footer" class="navbar-menu__link navbar-menu__link-contact">Контакты</a>
           <button class="navbar-button" data-href="#enter-modal" data-toggle="modal">Войти</button>
         </nav>
   </div>
@@ -509,7 +512,7 @@
               <div class="stories-slider__half">
                 <img src="img/stories-slider__img-5.jpg" alt="Фотография: Mix & Match Style 01" class="stories-slider__img">
                 <div class="stories-slider__info">
-                  <p class="stories-slider__text">Заплатки не нужны: как сделать женские рваные джинсы</p>
+                  <p class="stories-slider__text">Как сделать женские рваные джинсы?</p>
                   <a href="#" class="stories-slider__link">
                     <span class="stories-slider__more">Читать далее</span>
                   </a>
@@ -536,7 +539,7 @@
               <div class="stories-slider__half">
                 <img src="img/stories-slider__img-6.jpg" alt="Фотография: Mix & Match Style 01" class="stories-slider__img">
                 <div class="stories-slider__info">
-                  <p class="stories-slider__text">Как найти свой стиль, не потратив ни копейки?</p>
+                  <p class="stories-slider__text">Как найти свой стиль?</p>
                   <a href="#" class="stories-slider__link">
                     <span class="stories-slider__more">Читать далее</span>
                   </a>
@@ -547,7 +550,7 @@
               <div class="stories-slider__half">
                 <img src="img/stories-slider__img-7.jpg" alt="Фотография: Лайфхак" class="stories-slider__img">
                 <div class="stories-slider__info">
-                  <p class="stories-slider__text">Лайфхак: Как научиться правильно смешивать принты?</p>
+                  <p class="stories-slider__text">Как правильно смешивать принты?</p>
                   <a href="#" class="stories-slider__link">
                     <span class="stories-slider__more">Читать далее</span>
                   </a>
@@ -577,7 +580,7 @@
       </div>
       <!-- /.newsletter-info -->
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe form subscribe__form">
-        <div class="subscribe-input__group">
+        <div class="subscribe__input-group">
           <input
            type="email" 
            class="input subscribe__input" 
@@ -594,7 +597,7 @@
   </section>
   
   <!-- Подвал -->
-  <section class="footer">
+  <section class="footer" id="footer">
     <div class="footer-container">
       <div class="footer-wrapper">
         <div class="footer-links">
@@ -722,13 +725,24 @@
     <!-- /.modal__dialog-->
   </div>
   <!-- /.modal -->
-  <a href="index.html" class="to-top">
-    <img src="img/to-top.svg" alt="Кнопка: Наверх" class="to-top-icon">
-  </a>
+  
+  <!-- Кнопка Наверх -->
+  <button class="to-top"><img src="img/to-top.svg" alt="Кнопка: Наверх" class="to-top-icon"></button>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script>
+    $(function () {
+      // при нажатии на кнопку to-top
+      $('.to-top').click(function () {
+        // переместиться в верхнюю часть страницы
+        $("html, body").animate({
+          scrollTop: 0
+        }, 700);
+      })
+    });
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>

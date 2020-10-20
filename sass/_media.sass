@@ -281,24 +281,26 @@
         display: none
     &-menu
       flex-direction: column
-      align-items: center
+      align-items: flex-start
       margin-right: 0
-      padding-top: 50px
-      padding-bottom: 50px
       &__link
         font-size: 16px
         margin-right: 0
-        margin-bottom: 30px
+        margin-bottom: 20px
     &-button
-      padding-left: 40px
-      padding-right: 40px
+      padding: 9px 101px
+    &__close
+      position: absolute
+      top: 20px
+      right: 20px
     &-window
+      width: 304px
+      height: 322px
       position: fixed
-      left: 0
-      top: 84px
-      right: 0
-      bottom: 0
-      background-color: #f5f5f5
+      right: 8px
+      top: 10px
+      background-color: #fff
+      padding: 36px 24px
       &--visible
         display: block
         z-index: 2000
@@ -1403,8 +1405,6 @@
     &-mobile
       &--fixed
         height: 64px
-    &-window
-      top: 64px
   .main
     padding-bottom: 64px
     &__title
